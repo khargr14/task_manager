@@ -7,7 +7,7 @@ class TaskController < ApplicationController
     end
 
     post '/tasks/new' do
-        "process our form"
+       @task = @tast.create(things_to_do: params[:things_to_do], notes: params[:notes], due_date: params[:due_date] ) "process our form"
     end
 
 
