@@ -17,6 +17,13 @@ get '/tasks/:id' do
     erb :'/tasks/show'
 end
 
+get '/tasks' do
+    @tasks = Task.all 
+    erb :'/tasks/index'
+end
+
+
+
 
 #update
 
