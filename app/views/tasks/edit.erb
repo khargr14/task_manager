@@ -1,0 +1,10 @@
+<h1>Ready to Edit your task</h1>
+
+<form action= "/tasks/<%@tasks.id%>" method="POST">
+<input id="hidden" type="hidden" name="method" value="patch">
+   Things to do: <input type=textarea value="<%= @tasks.things_to_do%>" name="things_to_do">
+   Notes:<input type=textarea value="<%= @tasks.notes%>" name="notes">
+   Due date:<input type=date  name="due_date">
+    <input type=submit>
+    
+</form> 
